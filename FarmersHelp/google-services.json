@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "88836698421",
+    "firebase_url": "https://farmer-s-help.firebaseio.com",
+    "project_id": "farmer-s-help",
+    "storage_bucket": "farmer-s-help.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88836698421:android:6308e0c061a2dc02",
+        "android_client_info": {
+          "package_name": "com.example.drumil.farmershelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88836698421-e7usaq4qudp27pu2okgc0u8upjeuhd51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfoqIqbU2pujJjBLzxf6u3BWLb2CI5xqU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

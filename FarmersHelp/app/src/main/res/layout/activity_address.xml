@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Address"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Address Line 1"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/AddressLine1"
+        app:layout_constraintStart_toStartOf="parent" />
+    app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/twNamePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Name "
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EtNamePerson"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/EtNamePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/edittext_upgrade"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Name Of Person"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/AddressLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+
+        android:id="@+id/AddressLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/edittext_upgrade"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Address Line 1"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/AddressLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtNamePerson" />
+
+    <EditText
+        android:id="@+id/AddressLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_upgrade"
+        android:ems="10"
+
+        android:gravity="center_horizontal"
+        android:hint="Address Line 2"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/AddressLine1"
+        app:layout_constraintStart_toStartOf="@+id/AddressLine1"
+        app:layout_constraintTop_toBottomOf="@+id/AddressLine1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+
+        android:text="Address Line 2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/AddressLine2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/CityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_upgrade"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter City Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/AddressLine2"
+        app:layout_constraintStart_toStartOf="@+id/AddressLine2"
+        app:layout_constraintTop_toBottomOf="@+id/AddressLine2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="City"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/CityName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/PinCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_upgrade"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter PinCode"
+        android:inputType="textPersonName|phone"
+        app:layout_constraintStart_toStartOf="@+id/CityName"
+        app:layout_constraintTop_toBottomOf="@+id/CityName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Pin Code"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PinCode"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#80ffff"
+        android:backgroundTint="#22d9d9d9"
+        app:layout_constraintBottom_toTopOf="@+id/AddressLine1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Address :-"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="  Proceed To Payment  "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/twNamePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Name "
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EtNamePerson"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/EtNamePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/edittext_upgrade"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Name Of Person"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/AddressLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:background="@drawable/backg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Order Summary:-"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar5"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_margin="8dp"
+                android:background="#80ffff"
+                android:backgroundTint="#22d9d9d9" />
+            <LinearLayout
+                android:background="@drawable/linearlayout_bg"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tw_crop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="35sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/linearlayout_bg"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nitrogen :-"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Soil Content"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/twNContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="X gm/hectare"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ideal Soil Content"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/twRealNContent1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Y gm/hectare"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/linearlayout_bg"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phosphorus :-"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Soil Content"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/twPhContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="X gm/hectare"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ideal Soil Content"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/twPhRealContent1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Y gm/hectare"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="4dp"
+                android:background="@drawable/linearlayout_bg"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Potassium :-"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soil Content"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/twPoContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="X gm/hectare"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ideal Soil Content"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/twPoRealContent1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Y gm/hectare"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/linearlayout_bg"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fertilizer To be bought"
+                    android:textColor="@android:color/white"
+                    android:textSize="35sp" />
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Ammonium Sulphate"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Fertilizer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="X Pounds"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="potash Chloride"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Fertilizer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Y Pounds"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Mono Ammonium Phosphate"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Fertilizer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Z Pounds"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@drawable/linearlayout_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:text="Address :-"/>
+
+            <TextView
+                android:id="@+id/your_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Address is As follows"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/EndButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_button"
+                android:text="  Proceed To Payment  "
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

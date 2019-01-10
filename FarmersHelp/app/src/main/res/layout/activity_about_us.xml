@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about_us"
+    android:background="@drawable/backg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:background="@drawable/linearlayout_bg"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:text="About Us :-"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/linearlayout_bg"
+                android:padding="4dp"
+                android:src="@drawable/group"
+                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:background="@drawable/linearlayout_bg">
+                <LinearLayout
+                    android:background="@drawable/linearlayout_bg"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:gravity="center_vertical"
+                        android:text="Developer"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:text="Patel Drumil NileshBhai"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/linearlayout_bg"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="Data Analyst"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Gaud Parth Vijay"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/linearlayout_bg"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="Data Analyst"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Nimish Nahar"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/linearlayout_bg"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="Data Analyst"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Mohd Mussa"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/returning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circular_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+</android.support.constraint.ConstraintLayout>
